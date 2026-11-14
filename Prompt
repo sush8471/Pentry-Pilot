@@ -1,0 +1,18 @@
+I am working on **Pantry Pilot** (https://github.com/sush8471/Pentry-Pilot), a real-time, 100% offline dietary and allergen scanner Android app built with Flutter and on-device AI (Cactus Compute: Mirage OCR + Needle Agent).
+
+### Current Project Status:
+- All 5 architectural phases are fully implemented:
+  - Phase 1: Cactus Compute FFI bridge & mock engine
+  - Phase 2: Camera pipeline (drop-latest backpressure, 70% center ROI, 3x3 Laplacian sharpness filter)
+  - Phase 3: Text normalizer, PAL phrase detection, 400+ synonym SQLite DB, dietary profiles
+  - Phase 4: AR HUD CustomPainter viewfinder, verdict badge, Riverpod 2 state management
+  - Phase 5: Thermal throttling, battery profiling (<15%/hr drain), P95 latency benchmarks (<100ms budget), and 100% offline airplane-mode posture
+- All 115 unit, benchmark, UI, and security tests are passing (100% pass rate).
+- Full specifications, benchmarks, and phase gate sign-offs are documented in `/docs`.
+
+### Next Task:
+I want to continue from testing and running the app on this machine. Please:
+1. Navigate to the `app/` folder.
+2. Run `flutter pub get` to fetch dependencies.
+3. Run `flutter test` to verify the full 115-test suite passes on this environment.
+4. Check connected devices with `flutter devices` and help me run the app (`flutter run`) on my connected Android device or emulator.
